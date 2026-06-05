@@ -2,6 +2,7 @@ package zen.co.model;
 
 import java.time.LocalDateTime;
 
+@Entity
 public class User {
     private String fullName;
     private String email;
