@@ -8,23 +8,25 @@ import org.springframework.web.bind.annotation.RestController;
 import zen.co.model.User;
 import zen.co.repository.UserRepository;
 
+import java.util.List;
+
 @RestController
 public class UserController {
+
     @Autowired
     private UserRepository userRepository;
 
-    @PostMapping("/user")//create user
-    public User createuser(@RequestBody User user){//new method
-        return userRepository.save(user);//return created user
+
+    @PostMapping("/api/users")
+    public User createUser(@RequestBody User user){
+        return userRepository.save(user);
     }
 
-    @GetMapping("/api/user")//getting User details
-    public User getUser(){
-        User user = new User();
-        user.setEmail("rithanyaa.virtue@gmail.com");
-        user.setFullName("Rithanyaa");
-        user.setPhone("+91 6379155870");
-        user.setRole("customer");
-        return user;
+
+    @GetMapping("/api/users")
+    public List<User> getUsers(){
+        return userRepository.findAll();
     }
+    public
+
 }
