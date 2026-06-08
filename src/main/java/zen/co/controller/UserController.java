@@ -1,5 +1,6 @@
 package zen.co.controller;
 
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import zen.co.model.User;
@@ -16,7 +17,7 @@ public class UserController {
 
 
     @PostMapping("/api/users")
-    public User createUser(@RequestBody User user){
+    public User createUser(@RequestBody @Valid  User user){
         return userRepository.save(user);
     }
 
@@ -35,7 +36,7 @@ public class UserController {
     }
 
      @PutMapping("/api/users/{id}")
-    public User updateUser(@RequestBody User user,@PathVariable long id) throws Exception {
+    public User updateUser(@RequestBody @Valid  User user,@PathVariable long id) throws Exception {
         Optional <User> otp=userRepository.findById(id);
         if(otp.isEmpty()){
             throw new Exception("User not found with id:"+id);
@@ -46,6 +47,16 @@ public class UserController {
         existingUser.setRole(user.getRole());
 
         return userRepository.save(existingUser);//update by id ,id is in existing user
+     }
+
+     @DeleteMapping("/api/users/{id}")
+     public String  deleteUserById(@PathVariable Long id) throws Exception {
+        Optional <User> otp=userRepository.findById(id);
+        if(otp.isEmpty()){
+            throw new Exception("User not found with id:"+id);
+        }
+        userRepository.deleteById(otp.get().getId());
+        return "User deleted";
      }
 
 }
