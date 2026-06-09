@@ -17,6 +17,7 @@ public class GlobalExceptionHandler
                 exception.getMessage()
                 , req.getDescription(false),
                 LocalDateTime.now());
+
         return ResponseEntity.ok(response);
     }
 }
