@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="069ce5d7-4108-42b9-a99e-fdb6072a79d8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/BookingServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/domain/BookingStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/dto/BookingRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/dto/CategoryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/dto/SalonDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/dto/ServiceDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/impl/BookingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/model/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/model/SalonReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/repository/BookingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/service/BookingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/test/java/com/zen/BookingServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/ServiceOfferingApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/controller/SalonServiceOfferingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/controller/ServiceOfferingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/dto/CategoryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/dto/SalonDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/dto/ServiceDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/model/ServiceOffering.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/repository/ServiceOfferingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/service/ServiceOfferingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/service/impl/ServiceOfferingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-offering/src/test/java/com/zen/ServiceOfferingApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/zen/co/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/zen/co/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/microservices.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saloon-Application" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/com/zen/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/com/zen/repository/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/com/zen/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/com/zen/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service" beforeDir="false" afterPath="$PROJECT_DIR$/user-service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/zen/co/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/zen/co/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/zen/co/exception/UserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/zen/co/exception/UserException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/zen/co/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/zen/co/model/User.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/RITHANYAA/Downloads/microservices" value="3EyvxGHj9Uwo8nj8hWXEEPBb9Ic" />
+      <entry key="_C:/Users/RITHANYAA/Downloads/microservices/booking-service" value="3F32iEAR5TobtsrDyDlnRgAI13c" />
+      <entry key="_C:/Users/RITHANYAA/Downloads/microservices/category-service" value="3F4COHAJywzTTTcSZIXZBso8PGV" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;rithanyaavirtue-08&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/rithanyaavirtue-08/Saloon-Application.git&quot;,
+    &quot;accountId&quot;: &quot;9ea1a89b-c78d-47fe-acf5-77b87ebebef8&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="3EyvxGHj9Uwo8nj8hWXEEPBb9Ic" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BookingServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SalonServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ServiceOfferingApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/RITHANYAA/Downloads/microservices/booking-service/src/main/java/com/zen&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.zen.dto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\RITHANYAA\Downloads\microservices\booking-service\src\main\java\com\zen" />
+      <recent name="C:\Users\RITHANYAA\Downloads\microservices\service-offering\src\main\java\com\zen" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="microservices" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="microservices" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-cffe25b9f5b3-intellij.indexing.shared.core-IU-253.28294.334" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="069ce5d7-4108-42b9-a99e-fdb6072a79d8" name="Changes" comment="" />
+      <created>1781163869732</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1781163869732</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

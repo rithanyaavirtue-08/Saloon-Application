@@ -21,14 +21,14 @@ public class CategoryServiceImpl implements CategoryService {
         Category newCategory =new Category();
         newCategory.setName(category.getName());
         newCategory.setId(category.getId());
-        newCategory.setSalonId(category.getSalonId());
+        newCategory.setSalonId(salonDTO.getId());
         newCategory.setImage(category.getImage());
         return categoryRepository.save(newCategory);
     }
 
     @Override
     public Set<Category> getAllCategoriesBySalon(Long id) {
-        return categoryRepository.findBySalonById(id);
+        return categoryRepository.findBySalonId(id);
     }
 
     @Override
@@ -43,7 +43,7 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public void deleteCategoryById(Long id,Long salonId) throws Exception {
         Category category=getCategoryId(id);//both id should be same
-        if(category.getSalonId().equals(salonId)){
+        if(!category.getSalonId().equals(salonId)){
             throw new Exception("you don't have permission to delete this category");
 
         }
