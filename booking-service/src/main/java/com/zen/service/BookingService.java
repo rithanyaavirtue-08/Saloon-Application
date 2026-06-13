@@ -16,12 +16,12 @@ import java.util.function.LongFunction;
 public interface BookingService {
 
     Booking createBooking(BookingRequest booking, UserDTO userDTO, SalonDTO salonDTO,
-                          Set<ServiceDTO> serviceDTOSst);
+                          Set<ServiceDTO> serviceDTOSet) throws Exception;
 
     List<Booking> getBookingByCustomer(Long customerId);
     List<Booking> getBookingBySalon(Long salonId);
-    Booking getBookingById(Long id);
-    Booking updateBooking(Long BookingId, BookingStatus status);
+    Booking getBookingById(Long id) throws Exception;
+    Booking updateBooking(Long BookingId, BookingStatus status) throws Exception;
     List<Booking> getBookingsByDate(LocalDate date, Long salonId);
     SalonReport getSalonReport(Long salonId);
 }
