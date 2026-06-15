@@ -10,7 +10,6 @@ import com.zen.service.BookingService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import tools.jackson.databind.DatabindException;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -21,7 +20,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/booking")
+@RequestMapping("/api/bookings")
 public class BookingController {
 
     public final BookingService bookingService;
@@ -30,6 +29,7 @@ public class BookingController {
     @PostMapping
     public ResponseEntity<Booking> createBooking(
             @RequestParam Long salonId,
+            @RequestParam BookingStatus.PaymentMethod paymentMethod,
             @RequestBody BookingRequest bookingRequest
             ) throws Exception {
         UserDTO user=new UserDTO();
@@ -37,8 +37,8 @@ public class BookingController {
 
         SalonDTO salon=new SalonDTO();
         salon.setId(salonId);
-        salon.setOpenTime(LocalTime.now());
-        salon.setCloseTime(LocalTime.now().plusHours(12));
+        salon.setOpenTime(LocalTime.of(9,0));
+        salon.setCloseTime(LocalTime.of(21,0));
 
         Set<ServiceDTO> serviceDTOSet=new HashSet<>();
         ServiceDTO serviceDTO=new ServiceDTO();
@@ -87,7 +87,7 @@ public class BookingController {
 
         return ResponseEntity.ok(getBookingDTos(bookings));
     }
-    @GetMapping("/{bookingId}")
+    @GetMapping("/{BookingId}")
     public ResponseEntity<BookingDTO> getBookingById(
       @PathVariable Long BookingId
     ) throws Exception {

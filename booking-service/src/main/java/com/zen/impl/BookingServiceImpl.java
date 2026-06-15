@@ -48,6 +48,7 @@ public class BookingServiceImpl implements BookingService {
 
         Booking newBooking=new Booking();
         newBooking.setCustomerId(user.getId());
+        System.out.println("USER ID = " + user.getId());
         newBooking.setSalonId(salon.getId());
         newBooking.setServicesIds(idList);
         newBooking.setStatus(BookingStatus.PENDING);
@@ -65,7 +66,10 @@ public class BookingServiceImpl implements BookingService {
         LocalDateTime salonOpenTime=salonDTO.getOpenTime()
                 .atDate(bookingStartTime.toLocalDate());//saon open time only ,athu oda date um time um solrathu
         LocalDateTime salonCloseTime=salonDTO.getCloseTime().atDate(bookingStartTime.toLocalDate());
-
+        System.out.println("booking start "+bookingStartTime);
+        System.out.println("booking end "+bookingEndTime);
+        System.out.println("open "+salonOpenTime);
+        System.out.println("close "+salonCloseTime);
         if(bookingStartTime.isBefore(salonOpenTime) || bookingEndTime.isAfter(salonCloseTime)){
 
             throw new Exception("Booking time must be within salon's working hours");

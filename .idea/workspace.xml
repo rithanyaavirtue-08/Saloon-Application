@@ -5,65 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="069ce5d7-4108-42b9-a99e-fdb6072a79d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/BookingServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/domain/BookingStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/dto/BookingRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/dto/CategoryDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/dto/SalonDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/dto/ServiceDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/impl/BookingServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/model/Booking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/model/SalonReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/repository/BookingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/service/BookingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/test/java/com/zen/BookingServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/ServiceOfferingApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/controller/SalonServiceOfferingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/controller/ServiceOfferingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/dto/CategoryDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/dto/SalonDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/dto/ServiceDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/model/ServiceOffering.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/repository/ServiceOfferingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/service/ServiceOfferingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/zen/service/impl/ServiceOfferingServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/test/java/com/zen/ServiceOfferingApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/zen/co/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/zen/co/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/microservices.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saloon-Application" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/com/zen/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/com/zen/repository/CategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category-service/src/main/java/com/zen/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/java/com/zen/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service" beforeDir="false" afterPath="$PROJECT_DIR$/user-service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/zen/co/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/zen/co/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/zen/co/exception/UserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/zen/co/exception/UserException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/zen/co/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/zen/co/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/zen/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/zen/domain/PaymentMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/zen/domain/PaymentOrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/zen/model/PaymentOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/zen/service/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/controller/BookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/domain/BookingStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/domain/BookingStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/impl/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/impl/BookingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/mapper/BookingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/mapper/BookingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +63,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -117,33 +75,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;Spring Boot.BookingServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SalonServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ServiceOfferingApplication.executor&quot;: &quot;Run&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/RITHANYAA/Downloads/microservices/booking-service/src/main/java/com/zen&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.PaymentServiceApplication.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "Spring Boot.BookingServiceApplication.executor": "Run",
+    "Spring Boot.SalonServiceApplication.executor": "Run",
+    "Spring Boot.ServiceOfferingApplication.executor": "Run",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/RITHANYAA/Downloads/microservices/payment-service/src/main/java/com/zen",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "terminal",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.zen.controller" />
       <recent name="com.zen.dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\RITHANYAA\Downloads\microservices\payment-service\src\main\java\com\zen" />
       <recent name="C:\Users\RITHANYAA\Downloads\microservices\booking-service\src\main\java\com\zen" />
       <recent name="C:\Users\RITHANYAA\Downloads\microservices\service-offering\src\main\java\com\zen" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="PaymentServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zen.PaymentServiceApplication" />
+      <module name="payment-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="microservices" />
       <method v="2">
@@ -155,6 +132,11 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PaymentServiceApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -172,6 +154,28 @@
       <updated>1781163869732</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.xml.ws:jakarta.xml.ws-api" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/booking-service/src/main/java/com/zen/impl/BookingServiceImpl.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
