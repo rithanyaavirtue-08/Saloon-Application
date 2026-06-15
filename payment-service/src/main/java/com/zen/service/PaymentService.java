@@ -1,10 +1,13 @@
 package com.zen.service;
 
+import com.razorpay.PaymentLink;
 import com.zen.domain.PaymentMethod;
 import com.zen.model.PaymentOrder;
 import com.zen.payload.PaymentLinkResponse;
 import com.zen.payload.dto.BookingDTO;
 import com.zen.payload.dto.UserDTO;
+import org.apache.catalina.User;
+import org.hibernate.dialect.function.SpannerTruncFunction;
 
 public interface PaymentService {
 
@@ -16,6 +19,13 @@ public interface PaymentService {
 
    PaymentOrder getPaymentOrderByPaymentId(String paymentId);
 
-  PaymentLink
+  PaymentLink createRazorpayPaymentLink(UserDTO user,
+                                        Long amount,
+                                        Long orderId
+                                        );
+
+  String createStripePaymentLink(UserDTO user,
+                                 Long amount,
+                                 Long orderId);
 
 }
