@@ -1,4 +1,4 @@
-package com.zen.controller;
+package src.main.java.com.zen.controller;
 
 
 import com.zen.domain.BookingStatus;

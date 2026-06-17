@@ -1,4 +1,4 @@
-package com.zen.controller;
+package src.main.java.com.zen.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

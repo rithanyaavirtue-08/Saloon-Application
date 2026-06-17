@@ -5,14 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="069ce5d7-4108-42b9-a99e-fdb6072a79d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/zen/impl/PaymentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/zen/repository/PaymentOrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/zen/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/zen/domain/BookingStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/controller/BookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/repository/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zen/repository/BookingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/src/test/java/com/zen/BookingServiceApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/payment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/zen/model/PaymentOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/zen/model/PaymentOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/zen/impl/PaymentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/zen/impl/PaymentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/zen/payload/dto/BookingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/zen/payload/dto/BookingDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/zen/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/zen/service/PaymentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service" beforeDir="false" afterPath="$PROJECT_DIR$/user-service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/zen/co/UserServiceApplication.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,19 +36,21 @@
       <entry key="_C:/Users/RITHANYAA/Downloads/microservices" value="3EyvxGHj9Uwo8nj8hWXEEPBb9Ic" />
       <entry key="_C:/Users/RITHANYAA/Downloads/microservices/booking-service" value="3F32iEAR5TobtsrDyDlnRgAI13c" />
       <entry key="_C:/Users/RITHANYAA/Downloads/microservices/category-service" value="3F4COHAJywzTTTcSZIXZBso8PGV" />
+      <entry key="_C:/Users/RITHANYAA/Downloads/microservices/eureka-server" value="3FG2obk3Oo51CKmEyYwTnoJkzUG" />
     </persistenceIdMap>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -69,27 +83,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.PaymentServiceApplication.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "Spring Boot.BookingServiceApplication.executor": "Run",
-    "Spring Boot.SalonServiceApplication.executor": "Run",
-    "Spring Boot.ServiceOfferingApplication.executor": "Run",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/RITHANYAA/Downloads/microservices/payment-service/src/main/java/com/zen/payload/response",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "terminal",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.PaymentServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.booking-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.booking-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.booking-service [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.eureka-server [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.eureka-server [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservices-parent [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservices-parent [compile].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BookingServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PaymentServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SalonServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ServiceOfferingApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/RITHANYAA/Downloads/microservices/eureka-server/target/generated-test-sources/test-annotations&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/RITHANYAA/Downloads/microservices/payment-service/src/main/java/com/zen/payload/response&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.zen.controller" />
@@ -101,14 +125,17 @@
       <recent name="C:\Users\RITHANYAA\Downloads\microservices\booking-service\src\main\java\com\zen" />
       <recent name="C:\Users\RITHANYAA\Downloads\microservices\service-offering\src\main\java\com\zen" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zen.domain" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.BookingServiceApplication">
     <configuration name="PaymentServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zen.PaymentServiceApplication" />
       <module name="payment-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zen.*" />
+          <option name="PATTERN" value="src.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,6 +154,54 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <configuration name="BookingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.jdks/openjdk-25.0.1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="booking-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zen.BookingServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zen.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookingServiceApplication" type="springBootConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="spring_profiles_active" value="default" />
+        <env name="spring_output_ansi_enabled" value="always" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.zen.BookingServiceApplication" />
+      <module name="booking-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="springBootConfigurationType" factoryName="Spring Boot">
+      <envs>
+        <env name="spring_profiles_active" value="default" />
+        <env name="spring_output_ansi_enabled" value="always" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.zen.EurekaServerApplication" />
+      <module name="eureka-server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.PaymentServiceApplication" />
+      <item itemvalue="Spring Boot.BookingServiceApplication" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.PaymentServiceApplication" />
@@ -166,8 +241,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/booking-service/src/main/java/com/zen/impl/BookingServiceImpl.java</url>
-          <line>94</line>
+          <line>90</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/payment-service/src/main/java/com/zen/controller/PaymentController.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -22,3 +22,5 @@ public class BookingDTO {
     private Set<Long> servicesIds;
 
     private Long totalPrice;
+
+}
