@@ -1,10 +1,10 @@
 server:
-  port: 5005
+  port: 5006
 
 
 spring:
   application:
-    name: booking-service
+    name: payment-service
 
   jpa:
     show-sql: true
@@ -13,10 +13,22 @@ spring:
     database-platform: org.hibernate.dialect.MySQLDialect
 
   datasource:
-    url: jdbc:mysql://localhost:3306/bookingdb_zen
+    url: jdbc:mysql://localhost:3306/paymentdb_zen?createDatabaseIfNotExist=true
     username: root
     password: root123
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+razorPay:
+  api:
+    key: "rzp_test_T2cEjfWVKqQSou"
+    secret: "iAqA3TZif95jyjXpoflz3Ylt"
+
+
+stripe:
+  api:
+    key: "sk_test_51TjXQZLab92K1hchDwpKUwLVdblEkJUGzMirOUjJFT9wIYou4ayLgUIjjkRLSLNg7ObOoNbYMyGckuHTgs5BzUj800Q1VMIiI0"
+
 
 
 eureka:
