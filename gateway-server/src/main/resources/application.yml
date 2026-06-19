@@ -17,32 +17,40 @@ spring:
         - id: BOOKING-SERVICE
           uri: lb://BOOKING-SERVICE
           predicates:
-            - Path= /api/bookings/**
+            - Path=/api/bookings/**
 
         - id: PAYMENT-SERVICE
           uri: lb://PAYMENT-SERVICE
           predicates:
-            - Path= /api/payments/**
+            - Path=/api/payments/**
 
         - id: CATEGORY-SERVICE
           uri: lb://CATEGORY-SERVICE
           predicates:
-            - Path= /api/categories/**
+            - Path=/api/categories/**
+  - id: SALON-SERVICE
+    uri: lb://SALON-SERVICE
+    predicates:
+      - Path=/salons/**
 
-        - id: SALON-SERVICE
-          uri: lb://SALON-SERVICE
-          predicates:
-            - Path=/salons/**,/api/salons/**,/api/admin/salons/**
+  - id: SALON-API-SERVICE
+    uri: lb://SALON-SERVICE
+    predicates:
+      - Path=/api/salons/**
 
+  - id: SALON-ADMIN-SERVICE
+    uri: lb://SALON-SERVICE
+    predicates:
+      - Path=/api/admin/salons/**
         - id: SERVICE-OFFERING
           uri:  lb://SERVICE-OFFERING
           predicates:
-            - Path= /api/service-offering/**
+            - Path=/api/service-offering/**
 
         - id: USER-SERVICE
           uri: lb://USER-SERVICE
           predicates:
-            - Path=  /auth/**,/api/admin/users/**, /api/users/**, /users/**
+            - Path=/auth/**,/api/admin/users/**,/api/users/**, /users/**
 
 eureka:
   instance:
