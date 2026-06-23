@@ -1,8 +1,5 @@
-
-
 server:
   port: 5000
-
 
 spring:
   application:
@@ -12,7 +9,7 @@ spring:
     gateway:
       discovery:
         locator:
-          enabled : true
+          enabled: false
       routes:
         - id: BOOKING-SERVICE
           uri: lb://BOOKING-SERVICE
@@ -28,29 +25,36 @@ spring:
           uri: lb://CATEGORY-SERVICE
           predicates:
             - Path=/api/categories/**
-  - id: SALON-SERVICE
-    uri: lb://SALON-SERVICE
-    predicates:
-      - Path=/salons/**
 
-  - id: SALON-API-SERVICE
-    uri: lb://SALON-SERVICE
-    predicates:
-      - Path=/api/salons/**
+        - id: SALON-SERVICE
+          uri: lb://SALON-SERVICE
+          predicates:
+            - Path=/api/salons/**,/api/salons
 
-  - id: SALON-ADMIN-SERVICE
-    uri: lb://SALON-SERVICE
-    predicates:
-      - Path=/api/admin/salons/**
+        - id: SALON-API-SERVICE
+          uri: lb://SALON-SERVICE
+          predicates:
+            - Path=/api/salons/**
+
+        - id: SALON-ADMIN-SERVICE
+          uri: lb://SALON-SERVICE
+          predicates:
+            - Path=/api/admin/salons/**
+
         - id: SERVICE-OFFERING
-          uri:  lb://SERVICE-OFFERING
+          uri: lb://SERVICE-OFFERING
           predicates:
             - Path=/api/service-offering/**
+
+        - id: SALON-API-SERVICE
+          uri: lb://SALON-SERVICE
+          predicates:
+            - Path=/api/salons/**
 
         - id: USER-SERVICE
           uri: lb://USER-SERVICE
           predicates:
-            - Path=/auth/**,/api/admin/users/**,/api/users/**, /users/**
+            - Path=/auth/**,/api/admin/users/**,/api/users/**,/users/**
 
 eureka:
   instance:

@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="069ce5d7-4108-42b9-a99e-fdb6072a79d8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service" beforeDir="false" afterPath="$PROJECT_DIR$/user-service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/zen/co/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/zen/co/UserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/zen/co/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/zen/co/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/zen/co/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/zen/co/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salon-service/src/main/java/com/zen/SalonServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/salon-service/src/main/java/com/zen/SalonServiceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,14 +145,13 @@
               <entry key="PaymentServiceApplication" value="STOPPED" />
               <entry key="SalonServiceApplication" value="STOPPED" />
               <entry key="ServiceOfferingApplication" value="STOPPED" />
-              <entry key="UserServiceApplication" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayServerApplication">
+  <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="microservices" />
       <method v="2">
@@ -167,8 +164,6 @@
       <method v="2" />
     </configuration>
     <configuration name="BookingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.jdks/openjdk-25.0.1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="booking-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zen.BookingServiceApplication" />
       <method v="2">
@@ -217,21 +212,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="user-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="zen.co.UserServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Spring Boot.CategoryServiceApplication" />
-      <item itemvalue="Spring Boot.GatewayServerApplication" />
       <item itemvalue="Spring Boot.ServiceOfferingApplication" />
-      <item itemvalue="Spring Boot.PaymentServiceApplication" />
-      <item itemvalue="Spring Boot.UserServiceApplication" />
-      <item itemvalue="Spring Boot.SalonServiceApplication" />
       <item itemvalue="Spring Boot.BookingServiceApplication" />
+      <item itemvalue="Spring Boot.PaymentServiceApplication" />
+      <item itemvalue="Spring Boot.GatewayServerApplication" />
+      <item itemvalue="Spring Boot.CategoryServiceApplication" />
+      <item itemvalue="Spring Boot.SalonServiceApplication" />
       <item itemvalue="Spring Boot.EurekaServerApplication" />
     </list>
   </component>
