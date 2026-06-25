@@ -10,6 +10,7 @@ spring:
       discovery:
         locator:
           enabled: false
+
       routes:
         - id: BOOKING-SERVICE
           uri: lb://BOOKING-SERVICE
@@ -29,11 +30,6 @@ spring:
         - id: SALON-SERVICE
           uri: lb://SALON-SERVICE
           predicates:
-            - Path=/api/salons/**,/api/salons
-
-        - id: SALON-API-SERVICE
-          uri: lb://SALON-SERVICE
-          predicates:
             - Path=/api/salons/**
 
         - id: SALON-ADMIN-SERVICE
@@ -46,22 +42,27 @@ spring:
           predicates:
             - Path=/api/service-offering/**
 
-        - id: SALON-API-SERVICE
-          uri: lb://SALON-SERVICE
-          predicates:
-            - Path=/api/salons/**
-
         - id: USER-SERVICE
           uri: lb://USER-SERVICE
           predicates:
             - Path=/auth/**,/api/admin/users/**,/api/users/**,/users/**
 
 eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8070/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
   instance:
     prefer-ip-address: true
 
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://localhost:8070/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  endpoint:
+    gateway:
+      enabled: true

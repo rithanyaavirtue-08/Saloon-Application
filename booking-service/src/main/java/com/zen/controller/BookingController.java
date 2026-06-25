@@ -1,6 +1,4 @@
-package src.main.java.com.zen.controller;
-
-
+package com.zen.controller;
 import com.zen.domain.BookingStatus;
 import com.zen.dto.*;
 import com.zen.mapper.BookingMapper;
