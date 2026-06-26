@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="069ce5d7-4108-42b9-a99e-fdb6072a79d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/user-service/build.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/error.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service" beforeDir="false" afterPath="$PROJECT_DIR$/user-service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/zen/co/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/zen/co/UserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,46 +65,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.PaymentServiceApplication.executor": "Run",
-    "Maven.booking-service [clean].executor": "Run",
-    "Maven.booking-service [compile].executor": "Run",
-    "Maven.booking-service [verify].executor": "Run",
-    "Maven.category-service [clean].executor": "Run",
-    "Maven.eureka-server [clean].executor": "Run",
-    "Maven.eureka-server [package].executor": "Run",
-    "Maven.gateway-server [clean].executor": "Run",
-    "Maven.microservices-parent [clean].executor": "Run",
-    "Maven.microservices-parent [compile].executor": "Run",
-    "Maven.payment-service [clean].executor": "Run",
-    "Maven.salon-service [clean].executor": "Run",
-    "Maven.service-offering [clean].executor": "Run",
-    "Maven.user-service [clean].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "Spring Boot.BookingServiceApplication.executor": "Run",
-    "Spring Boot.CategoryServiceApplication.executor": "Run",
-    "Spring Boot.EurekaServerApplication.executor": "Run",
-    "Spring Boot.GatewayServerApplication.executor": "Run",
-    "Spring Boot.PaymentServiceApplication.executor": "Run",
-    "Spring Boot.SalonServiceApplication.executor": "Run",
-    "Spring Boot.ServiceOfferingApplication.executor": "Run",
-    "Spring Boot.UserServiceApplication.executor": "Run",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/Users/RITHANYAA/Downloads/microservices/eureka-server/target/generated-test-sources/test-annotations",
-    "last_opened_file_path": "C:/Users/RITHANYAA/Downloads/microservices/payment-service/src/main/java/com/zen/payload/response",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.import",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.PaymentServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.booking-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.booking-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.booking-service [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.category-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.eureka-server [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.eureka-server [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gateway-server [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservices-parent [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservices-parent [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.payment-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.salon-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.service-offering [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.user-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BookingServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CategoryServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PaymentServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SalonServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ServiceOfferingApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/RITHANYAA/Downloads/microservices/eureka-server/target/generated-test-sources/test-annotations&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/RITHANYAA/Downloads/microservices/payment-service/src/main/java/com/zen/payload/response&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.zen.controller" />
@@ -134,18 +129,6 @@
       <set>
         <option value="SpringBootApplicationConfigurationType" />
       </set>
-    </option>
-    <option name="hiddenConfigurations">
-      <map>
-        <entry key="SpringBootApplicationConfigurationType">
-          <value>
-            <set>
-              <option value="EurekaServerApplication" />
-              <option value="PaymentServiceApplication" />
-            </set>
-          </value>
-        </entry>
-      </map>
     </option>
     <option name="configurationStatuses">
       <map>
