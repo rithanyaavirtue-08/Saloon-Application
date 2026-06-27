@@ -1,12 +1,12 @@
 services:
 
-  userdb:
+ userdb:
     image: mysql
     container_name: userdb
     ports:
       - 3301:3306
     healthcheck:
-      test: [ "CMD", "mysgladminn", "ping", "-h", "localhost" ]
+      test: [ "CMD", "mysqladminn", "ping", "-h", "localhost" ]
       interval: 10s
       timeout: 5s
       retries: 10
@@ -17,8 +17,97 @@ services:
     networks:
       - zen
 
+ bookingdb:
+    image: mysql
+    container_name: bookingdb
+    ports:
+      - 3302:3306
+    healthcheck:
+      test: [ "CMD", "mysqladminn", "ping", "-h", "localhost" ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    environment:
+     MYSQL_ROOT_PASSWORD: root123
+     MYSQL_DATABASE: bookingdb
+    networks:
+      - zen
+     
+ categorydb:
+    image: mysql
+    container_name: categorydb
+    ports:
+      - 3303:3306
+    healthcheck:
+      test: [ "CMD", "mysqladminn", "ping", "-h", "localhost" ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    environment:
+     MYSQL_ROOT_PASSWORD: root123
+     MYSQL_DATABASE: categorydb
+    networks:
+      - zen
 
-  eureakaserver:
+ paymentdb:
+    image: mysql
+    container_name: paymentdb
+    ports:
+      - 3304:3306
+    healthcheck:
+      test: [ "CMD", "mysqladminn", "ping", "-h", "localhost" ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    environment:
+     MYSQL_ROOT_PASSWORD: root123
+     MYSQL_DATABASE: paymentdb
+    networks:
+      - zen
+
+ salondb:
+    image: mysql
+    container_name: salondb
+    ports:
+      - 3305:3306
+    healthcheck:
+      test: [ "CMD", "mysqladminn", "ping", "-h", "localhost" ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    environment:
+     MYSQL_ROOT_PASSWORD: root123
+     MYSQL_DATABASE: salondb
+    networks:
+      - zen
+
+ service-offeringdb:
+    image: mysql
+    container_name: service-offeringdb
+    ports:
+      - 3306:3306
+    healthcheck:
+      test: [ "CMD", "mysqladminn", "ping", "-h", "localhost" ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    environment:
+     MYSQL_ROOT_PASSWORD: root123
+     MYSQL_DATABASE: service-offeringdb
+    networks:
+      - zen
+
+
+
+  
+
+
+ eureakaserver:
     image: "rithanyaa870/salon-eureka-server-com:v1"
     ports:
       - "8070:8070"
@@ -40,7 +129,7 @@ services:
        - zen
 
 
-  user:
+ user:
     image: "rithanyaa870/salon-user-com:v1"
     ports:
       - "5001:5001"
@@ -52,6 +141,9 @@ services:
       retries: 10
       start_period: 10s
     container_name: user
+    depends_on:
+      userdb:
+        condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "user-service"
       SPRING_DATASOURCE_URL: "jdbc:mysql://userdb:3306/userdb"
@@ -66,6 +158,176 @@ services:
     networks:
       - zen
 
+ booking:
+    image: "rithanyaa870/salon-booking-com:v1"
+    ports:
+      - "5005:5005"
+
+    healthcheck:
+      test: "curl --fail --silent booking:5005/actuator/health/readines | grep UP || exist 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    container_name: booking
+    depends_on:
+      userdb:
+        condition: service_healthy
+    environment:
+      SPRING_APPLICATION_NAME: "booking-service"
+      SPRING_DATASOURCE_URL: "jdbc:mysql://bookingdb:3306/bookingdb"
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root123
+      EUREKA_CLIENT_SERVICEURL_DEFAULTURL: http://eurekaserver:8070/eureka/
+
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - zen
+
+ category:
+    image: "rithanyaa870/salon-category-com:v1"
+    ports:
+      - "5003:5003"
+
+    healthcheck:
+      test: "curl --fail --silent category:5003/actuator/health/readines | grep UP || exist 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    container_name: category
+    depends_on:
+      userdb:
+        condition: service_healthy
+    environment:
+      SPRING_APPLICATION_NAME: "category-service"
+      SPRING_DATASOURCE_URL: "jdbc:mysql://categorydb:3306/categorydb"
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root123
+      EUREKA_CLIENT_SERVICEURL_DEFAULTURL: http://eurekaserver:8070/eureka/
+
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - zen
+
+ payment:
+    image: "rithanyaa870/salon-pay-com:v1"
+    ports:
+      - "5006:5006"
+
+    healthcheck:
+      test: "curl --fail --silent payment:5006/actuator/health/readines | grep UP || exist 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    container_name: payment
+    depends_on:
+      userdb:
+        condition: service_healthy
+    environment:
+      SPRING_APPLICATION_NAME: "payment-service"
+      SPRING_DATASOURCE_URL: "jdbc:mysql://paymentdb:3306/paymentdb"
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root123
+      EUREKA_CLIENT_SERVICEURL_DEFAULTURL: http://eurekaserver:8070/eureka/
+
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - zen
+
+ salon:
+    image: "rithanyaa870/salon-com:v1"
+    ports:
+      - "5002:5002"
+
+    healthcheck:
+      test: "curl --fail --silent salon:5002/actuator/health/readines | grep UP || exist 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    container_name: salon
+    depends_on:
+      userdb:
+        condition: service_healthy
+    environment:
+      SPRING_APPLICATION_NAME: "salon-service"
+      SPRING_DATASOURCE_URL: "jdbc:mysql://salondb:3306/salondb"
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root123
+      EUREKA_CLIENT_SERVICEURL_DEFAULTURL: http://eurekaserver:8070/eureka/
+
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - zen
+
+ service-offering:
+    image: "rithanyaa870/salon-service-offering-com:v1"
+    ports:
+      - "5004:5004"
+
+    healthcheck:
+      test: "curl --fail --silent service-offering:5004/actuator/health/readines | grep UP || exist 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    container_name: service-offering
+    depends_on:
+      userdb:
+        condition: service_healthy
+    environment:
+      SPRING_APPLICATION_NAME: "service-offering-service"
+      SPRING_DATASOURCE_URL: "jdbc:mysql://serviceofferingdb:3306/serviceofferingdb"
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root123
+      EUREKA_CLIENT_SERVICEURL_DEFAULTURL: http://eurekaserver:8070/eureka/
+
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - zen
+
+    
+ gatewayserver:
+    image: "rithanyaa870/salon-gateway-com:v1"
+    ports:
+      - "5000:5000"
+
+    healthcheck:
+      test: "curl --fail --silent gatewayserver:5004/actuator/health/readines | grep UP || exist 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    container_name: gateway-server
+    environment:
+      SPRING_APPLICATION_NAME: "gateway-server"
+      EUREKA_CLIENT_SERVICEURL_DEFAULTURL: http://eurekaserver:8070/eureka/
+
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - zen
+
+       
 
 
 networks:
