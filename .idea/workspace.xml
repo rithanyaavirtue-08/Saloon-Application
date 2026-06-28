@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="069ce5d7-4108-42b9-a99e-fdb6072a79d8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salon-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/salon-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salon-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/salon-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-offering/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-offering/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-offering/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-offering/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +132,7 @@
       <recent name="C:\Users\RITHANYAA\Downloads\microservices\service-offering\src\main\java\com\zen" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\RITHANYAA\Downloads\microservices\category-service\src\main\java\com\zen" />
       <recent name="C:\Users\RITHANYAA\Downloads\microservices\user-service" />
       <recent name="C:\Users\RITHANYAA\Downloads\microservices\user-service\src\main\java\zen\co" />
     </key>
@@ -138,8 +153,9 @@
             <map>
               <entry key="BookingServiceApplication" value="STOPPED" />
               <entry key="CategoryServiceApplication" value="STOPPED" />
-              <entry key="EurekaServerApplication" value="STOPPED" />
-              <entry key="GatewayServerApplication" value="STOPPED" />
+              <entry key="EurekaServerApplication" value="FAILED" />
+              <entry key="GatewayServerApplication" value="FAILED" />
+              <entry key="PaymentServiceApplication" value="FAILED" />
               <entry key="SalonServiceApplication" value="STOPPED" />
               <entry key="ServiceOfferingApplication" value="STOPPED" />
               <entry key="UserServiceApplication" value="STOPPED" />
@@ -218,8 +234,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.PaymentServiceApplication" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.ServiceOfferingApplication" />
       <item itemvalue="Spring Boot.BookingServiceApplication" />
       <item itemvalue="Spring Boot.GatewayServerApplication" />

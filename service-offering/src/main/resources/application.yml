@@ -14,7 +14,7 @@ spring:
     database-platform: org.hibernate.dialect.MySQLDialect
 
   datasource:
-    url: jdbc:mysql://localhost:3306/servicesdb_zen
+    url: jdbc:mysql://service-offeringdb:3306/serviceofferingdb
     username: root
     password: root123
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -28,4 +28,4 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:8070/eureka/
+      defaultZone:  http://eurekaserver:8070/eureka/
