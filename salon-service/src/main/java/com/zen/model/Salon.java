@@ -31,7 +31,7 @@ public class Salon {
     @Column(nullable = false)
     private String city;
 
-    @Column(nullable = false)
+    @Column(name = "owner_id", nullable = false)
     private Long ownerId;
 
     @Column(nullable = false)

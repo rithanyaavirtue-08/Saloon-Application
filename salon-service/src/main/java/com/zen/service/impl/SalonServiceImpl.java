@@ -27,10 +27,8 @@ public class SalonServiceImpl implements SalonService {
         salon.setAddress(req.getAddress());
         salon.setCity(req.getCity());
         salon.setEmail(req.getEmail());
-        salon.setCity(req.getCity());
         salon.setImages(req.getImages());
-        salon.setOwnerId(req.getOwnerId());
-        salon.setOpenTime(req.getOpenTime());
+        salon.setOwnerId(user.getId());        salon.setOpenTime(req.getOpenTime());
         salon.setCloseTime(req.getCloseTime());
         salon.setPhoneNumber(req.getPhoneNumber());
 

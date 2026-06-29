@@ -167,7 +167,7 @@ services:
       - zen
 
   category:
-    image: "rithanyaa870/salon-category-com:v1"
+    image: "rithanyaa870/salon-category-service-com:v1"
     container_name: category
     ports:
       - "5003:5003"
@@ -258,7 +258,7 @@ services:
       retries: 10
       start_period: 30s
     environment:
-      SPRING_APPLICATION_NAME: service-offering-service
+      SPRING_APPLICATION_NAME: service-offering
       SPRING_DATASOURCE_URL: jdbc:mysql://service-offeringdb:3306/service-offeringdb
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root123

@@ -13,7 +13,7 @@ spring:
     database-platform: org.hibernate.dialect.MySQLDialect
 
   datasource:
-    url: jdbc:mysql://bookingdb:3306/bookingdb_zen
+    url: jdbc:mysql://bookingdb:3306/bookingdb
     username: root
     password: root123
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -28,3 +28,15 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://eurekaserver:8070/eureka/
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+
+  endpoint:
+    health:
+      show-details: always

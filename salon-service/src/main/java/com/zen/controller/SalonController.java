@@ -22,13 +22,15 @@ public class SalonController {
     //http://localhost:5002/api/salons
     @PostMapping
     public ResponseEntity<SalonDTO> createSalon(@RequestBody SalonDTO salonDTO) {
+
         UserDTO userDTO = new UserDTO();
         userDTO.setId(1L);
-        Salon salon = salonService.createSalon(salonDTO, userDTO);
-        SalonDTO salonDTO1 = SalonMapper.mapToDTO(salon);
-        salon.setOwnerId(userDTO.getId());
-        return ResponseEntity.ok(salonDTO1);
 
+        Salon salon = salonService.createSalon(salonDTO, userDTO);
+
+        SalonDTO response = SalonMapper.mapToDTO(salon);
+
+        return ResponseEntity.ok(response);
     }
 
     //http://localhost:5002/api/salons/1

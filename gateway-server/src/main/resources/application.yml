@@ -38,7 +38,7 @@ spring:
             - Path=/api/admin/salons/**
 
         - id: SERVICE-OFFERING
-          uri: lb://SERVICE-OFFERING
+          uri: lb://SERVICE-OFFERING-SERVICE
           predicates:
             - Path=/api/service-offering/**
 
@@ -66,3 +66,4 @@ management:
   endpoint:
     gateway:
       enabled: true
+

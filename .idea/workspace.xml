@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="069ce5d7-4108-42b9-a99e-fdb6072a79d8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salon-service/src/main/java/com/zen/controller/SalonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/salon-service/src/main/java/com/zen/controller/SalonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salon-service/src/main/java/com/zen/model/Salon.java" beforeDir="false" afterPath="$PROJECT_DIR$/salon-service/src/main/java/com/zen/model/Salon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salon-service/src/main/java/com/zen/service/SalonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/salon-service/src/main/java/com/zen/service/SalonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salon-service/src/main/java/com/zen/service/impl/SalonServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/salon-service/src/main/java/com/zen/service/impl/SalonServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,6 +264,17 @@
     <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
     <option featureType="dependencySupport" implementationName="java:jakarta.xml.ws:jakarta.xml.ws-api" />
     <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
