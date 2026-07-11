@@ -1,10 +1,15 @@
 server:
   port: 5006
 
-
 spring:
   application:
     name: payment-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3303/paymentdb?createDatabaseIfNotExist=true
+    username: root
+    password: root123
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     show-sql: true
@@ -12,24 +17,14 @@ spring:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQLDialect
 
-  datasource:
-    url: jdbc:mysql://localhost:3306/paymentdb?createDatabaseIfNotExist=true
-    username: root
-    password: root123
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
-
 razorPay:
   api:
-    key: "rzp_test_T2cEjfWVKqQSou"
-    secret: "iAqA3TZif95jyjXpoflz3Ylt"
-
+    key: "rzp_test_..."
+    secret: "..."
 
 stripe:
   api:
-    key: "sk_test_51TjXQZLab92K1hchDwpKUwLVdblEkJUGzMirOUjJFT9wIYou4ayLgUIjjkRLSLNg7ObOoNbYMyGckuHTgs5BzUj800Q1VMIiI0"
-
-
+    key: "sk_test_..."
 
 eureka:
   instance:
@@ -39,4 +34,4 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://eurekaserver:8070/eureka/
+      defaultZone: http://localhost:8070/eureka/

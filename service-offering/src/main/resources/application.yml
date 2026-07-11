@@ -1,31 +1,25 @@
-
 server:
   port: 5004
-
 
 spring:
   application:
     name: service-offering
 
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-    database-platform: org.hibernate.dialect.MySQLDialect
-
   datasource:
-    url: jdbc:mysql://service-offeringdb:3306/serviceofferingdb
+    url: jdbc:mysql://localhost:3306/serviceofferingdb
     username: root
     password: root123
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
 eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8070/eureka/
+
   instance:
     prefer-ip-address: true
-
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone:  http://eurekaserver:8070/eureka/

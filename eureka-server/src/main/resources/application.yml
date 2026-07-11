@@ -7,8 +7,10 @@ spring:
 
 eureka:
   client:
+    defaultZone: http://localhost:8070/eureka/
     register-with-eureka: false
     fetch-registry: false
+
 
 management:
   endpoints:
