@@ -137,7 +137,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://userdb:3306/userdb
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root123
-      EUREKA_CLIENT_SERVICEURL_DEFAULTURL: http://eurekaserver:8070/eureka/
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
       - zen
 
@@ -162,7 +162,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://bookingdb:3306/bookingdb
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root123
-      EUREKA_CLIENT_SERVICEURL_DEFAULTURL: http://eurekaserver:8070/eureka/
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
       - zen
 
@@ -187,7 +187,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://categorydb:3306/categorydb
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root123
-      EUREKA_CLIENT_SERVICEURL_DEFAULTURL: http://eurekaserver:8070/eureka/
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
       - zen
 
@@ -212,7 +212,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://paymentdb:3306/paymentdb?createDatabaseIfNotExist=true
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root123
-      EUREKA_CLIENT_SERVICEURL_DEFAULTURL: http://eurekaserver:8070/eureka/
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
       - zen
 
@@ -237,7 +237,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://salondb:3306/salondb
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root123
-      EUREKA_CLIENT_SERVICEURL_DEFAULTURL: http://eurekaserver:8070/eureka/
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
       - zen
 
@@ -262,7 +262,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://service-offeringdb:3306/service-offeringdb
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root123
-      EUREKA_CLIENT_SERVICEURL_DEFAULTURL: http://eurekaserver:8070/eureka/
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     networks:
       - zen
 
@@ -282,7 +282,21 @@ services:
       start_period: 30s
     environment:
       SPRING_APPLICATION_NAME: gateway-server
-      EUREKA_CLIENT_SERVICEURL_DEFAULTURL: http://eurekaserver:8070/eureka/
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
+    networks:
+      - zen
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.0
+    container_name: keycloak
+    command: start-dev
+    ports:
+      - "9090:8080"
+
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+
     networks:
       - zen
 

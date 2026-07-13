@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="069ce5d7-4108-42b9-a99e-fdb6072a79d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salon-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/salon-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-offering/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-offering/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +91,7 @@
     "Spring Boot.CategoryServiceApplication.executor": "Run",
     "Spring Boot.EurekaServerApplication.executor": "Run",
     "Spring Boot.GatewayServerApplication.executor": "Run",
-    "Spring Boot.PaymentServiceApplication.executor": "Debug",
+    "Spring Boot.PaymentServiceApplication.executor": "Run",
     "Spring Boot.SalonServiceApplication.executor": "Run",
     "Spring Boot.ServiceOfferingApplication.executor": "Run",
     "Spring Boot.UserServiceApplication.executor": "Run",
@@ -106,7 +101,7 @@
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/RITHANYAA/Downloads/microservices/eureka-server/target/generated-test-sources/test-annotations",
     "last_opened_file_path": "C:/Users/RITHANYAA/Downloads/microservices/payment-service/src/main/java/com/zen/payload/response",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "Docker",
@@ -149,9 +144,9 @@
               <entry key="CategoryServiceApplication" value="STOPPED" />
               <entry key="EurekaServerApplication" value="STOPPED" />
               <entry key="GatewayServerApplication" value="STOPPED" />
-              <entry key="PaymentServiceApplication" value="STOPPED" />
-              <entry key="SalonServiceApplication" value="STOPPED" />
-              <entry key="ServiceOfferingApplication" value="STOPPED" />
+              <entry key="PaymentServiceApplication" value="FAILED" />
+              <entry key="SalonServiceApplication" value="FAILED" />
+              <entry key="ServiceOfferingApplication" value="FAILED" />
               <entry key="UserServiceApplication" value="STOPPED" />
             </map>
           </value>
@@ -159,7 +154,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+  <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="microservices" />
       <method v="2">
@@ -222,7 +217,7 @@
     </configuration>
     <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="user-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="zen.co.UserServiceApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zen.UserServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

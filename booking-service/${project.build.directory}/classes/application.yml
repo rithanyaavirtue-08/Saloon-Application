@@ -1,12 +1,12 @@
 server:
-  port: 5006
+  port: 5005
 
 spring:
   application:
-    name: payment-service
+    name: booking-service
 
   datasource:
-    url: jdbc:mysql://localhost:3306/paymentdb?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3303/bookingdb
     username: root
     password: root123
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -17,15 +17,6 @@ spring:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQLDialect
 
-razorPay:
-  api:
-    key: "rzp_test_TCY0AXSt4tx01G"
-    secret: "GVjMMjT2euzATrGsP0NGdAf6"
-
-stripe:
-  api:
-    key: "pk_test_51TsK2f2MN1EsCGckQYHOYn3fevuOdhnjNwtjdREqujRYkFB447fg8K4YV2UozD3hXPkH9aRbLxmV1Ah1e4ORQNij00wExgIzSw"
-
 eureka:
   instance:
     prefer-ip-address: true
@@ -35,3 +26,13 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8070/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+
+  endpoint:
+    health:
+      show-details: always
